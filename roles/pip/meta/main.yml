@@ -1,5 +1,10 @@
 ---
 
+dependencies:
+
+  - role: epel
+    when: ansible_os_family == "RedHat" or ansible_os_family == "CentOS"
+
 galaxy_info:
   author: wikitops
   description: Pip for Linux.

@@ -50,6 +50,14 @@ pip01                   running (virtualbox)
 
 #### Deployment
 
+This playbook has some dependencies to other roles that must be downloaded before executing the playbook :
+
+```bash
+$ ansible-galaxy install -r requirements.yml
+```
+
+This command should download the Epel role from Wikitops Github account to the local role path.
+
 To deploy pip on Vagrant, you just have to run the Ansible playbook pip.yml with this command :
 
 ```
