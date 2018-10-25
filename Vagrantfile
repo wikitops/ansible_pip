@@ -8,7 +8,7 @@ SUPPORTED_OS = {
 }
 
 # Vagrant instance management
-$os                     = "centos"
+$os                     = "ubuntu"
 $num_instances          = 1
 $instance_name_prefix   = "pip"
 $vm_memory              = 1024
