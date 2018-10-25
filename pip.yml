@@ -1,6 +1,6 @@
 ---
 
-- hosts: all
+- hosts: pip
   remote_user: vagrant
   become: yes
   vars:
