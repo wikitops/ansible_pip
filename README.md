@@ -43,7 +43,7 @@ Current machine states:
 pip01                   running (virtualbox)
 ```
 
-If everything run has expected, you should be able to run pip command on the Vagrant instance.
+If everything run as expected, you should be able to run pip command on the Vagrant instance.
 
 #### Destroy
 
