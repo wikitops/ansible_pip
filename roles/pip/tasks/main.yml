@@ -1,22 +1,12 @@
 ---
 
-- name: PIP | Inlcude Ubuntu Focal (20.04) variables
-  include_vars: ubuntu-focal.yml
-  when: ansible_distribution == "Ubuntu" and ansible_lsb.codename == "focal"
-
 - name: PIP | Installation
   package:
-    name:
-      - "{{ pip_package_name }}"
-      - python-setuptools
+    name: "{{ pip_package_names }}"
     state: present
 
 - name: PIP | Install asked packages
   pip:
     executable: "{{ pip_executable }}"
-    extra_args: "{{ item.extra_args | default(omit) }}"
-    name: "{{ item.name | default(item) }}"
-    version: "{{ item.version | default(omit) }}"
-    virtualenv: "{{ item.virtualenv | default(omit) }}"
-    state: "{{ item.state | default('present') }}"
-  loop: "{{ pip_packages }}"
+    name: "{{ pip_packages }}"
+    state: present

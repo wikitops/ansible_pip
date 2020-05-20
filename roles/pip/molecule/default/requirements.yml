@@ -1,5 +1,5 @@
 ---
 
 - src: git+https://github.com/wikitops/ansible_epel
-  version: "1.2"
+  version: "1.5"
   name: epel

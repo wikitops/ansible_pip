@@ -4,6 +4,7 @@
   remote_user: vagrant
   become: yes
   vars:
-    pip_packages: []
+    pip_packages:
+      - docker
   roles:
     - pip

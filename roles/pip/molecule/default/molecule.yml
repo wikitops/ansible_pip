@@ -9,12 +9,18 @@ lint:
   options:
     config-file: molecule/default/yaml-lint.yml
 platforms:
-  - name: centos
+  - name: centos_7
     image: centos:7
-  - name: ubuntu
-    image: ubuntu:xenial
-  - name: debian
-    image: debian:jessie
+  - name: centos_8
+    image: centos:8
+  - name: ubuntu_bionic
+    image: ubuntu:bionic
+  - name: ubuntu_focal
+    image: ubuntu:focal
+  - name: debian_stretch
+    image: debian:stretch
+  - name: debian_buster
+    image: debian:buster
 provisioner:
   name: ansible
   lint:

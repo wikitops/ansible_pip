@@ -8,8 +8,8 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 def test_package(host):
     if host.system_info.distribution == 'centos':
-        pkg = ["python", "python2-pip"]
+        pkg = ["python36", "python3-pip"]
     else:
-        pkg = ["python", "python-pip"]
+        pkg = ["python3", "python3-pip"]
 
     assert host.package(pkg).is_installed

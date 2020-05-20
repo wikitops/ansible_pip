@@ -4,11 +4,13 @@
 # PIP
 ###
 
-# Pip package name
-pip_package_name: "python-pip"
-
 # Pip executable package
-pip_executable: pip
+pip_executable: pip3
+
+# Pip package names
+pip_package_names:
+  - "python3-pip"
+  - "python-setuptools"
 
 # Package to install
 pip_packages: []
