@@ -3,11 +3,12 @@
 
 # List of supported operating systems
 SUPPORTED_OS = {
-  "debian_buster"  => {box: "debian/buster64", bootstrap_os: "debian", user: "vagrant"},
+  "debian_buster"  => {box: "debian/buster64",  bootstrap_os: "debian", user: "vagrant"},
   "debian_stretch" => {box: "debian/stretch64", bootstrap_os: "debian", user: "vagrant"},
-  "ubuntu_focal"   => {box: "ubuntu/focal64",  bootstrap_os: "ubuntu", user: "vagrant"},
+  "ubuntu_focal"   => {box: "ubuntu/focal64",   bootstrap_os: "ubuntu", user: "vagrant"},
   "ubuntu_bionic"  => {box: "ubuntu/bionic64",  bootstrap_os: "ubuntu", user: "vagrant"},
-  "centos_7"       => {box: "centos/7",        bootstrap_os: "centos", user: "vagrant"}
+  "centos_8"       => {box: "centos/8",         bootstrap_os: "centos", user: "vagrant"},
+  "centos_7"       => {box: "centos/7",         bootstrap_os: "centos", user: "vagrant"}
 }
 
 # Vagrant instance management
