@@ -4,5 +4,11 @@
 # PIP
 ###
 
+# Pip package name
+pip_package_name: "python-pip"
+
+# Pip executable package
+pip_executable: pip
+
 # Package to install
 pip_packages: []
