@@ -1,6 +1,6 @@
 # Ansible : Playbook Pip
 
-The aim of this project is to deploy a Pip instance on Vagrant instances.
+The purpose of this project is to deploy a Pip instance on a Vagrant instance.
 
 ## Getting Started
 
@@ -27,7 +27,7 @@ Be aware that you need to be in the Vagrant directory to be able to run the comm
 
 #### Deployment
 
-To deploy Pip on Vagrant instance, just run this command :
+To deploy Pip on the Vagrant instance, just run this command :
 
 ```bash
 $ vagrant up
@@ -87,4 +87,4 @@ Member of Wikitops : https://www.wikitops.io/
 
 ## Licence
 
-This project is licensed under the Apache License, Version 2.0. For the full text of the license, see the LICENSE file.
+This project is licensed under the MIT License. For the full text of the license, see the [LICENSE](LICENSE) file.

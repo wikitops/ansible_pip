@@ -3,16 +3,15 @@
 
 # List of supported operating systems
 SUPPORTED_OS = {
-  "debian_buster"  => {box: "debian/buster64",  bootstrap_os: "debian", user: "vagrant"},
-  "debian_stretch" => {box: "debian/stretch64", bootstrap_os: "debian", user: "vagrant"},
-  "ubuntu_focal"   => {box: "ubuntu/focal64",   bootstrap_os: "ubuntu", user: "vagrant"},
-  "ubuntu_bionic"  => {box: "ubuntu/bionic64",  bootstrap_os: "ubuntu", user: "vagrant"},
-  "centos_8"       => {box: "centos/8",         bootstrap_os: "centos", user: "vagrant"},
-  "centos_7"       => {box: "centos/7",         bootstrap_os: "centos", user: "vagrant"}
+  "debian9"    => {box: "generic/debian9",    user: "vagrant"},
+  "debian10"   => {box: "generic/debian10",   user: "vagrant"},
+  "ubuntu1904" => {box: "generic/ubuntu1904", user: "vagrant"},
+  "ubuntu2004" => {box: "generic/ubuntu2004", user: "vagrant"},
+  "centos7"    => {box: "generic/centos7",    user: "vagrant"}
 }
 
 # Vagrant instance management
-$os                     = "ubuntu_focal"
+$os                     = "ubuntu2004"
 $num_instances          = 1
 $instance_name_prefix   = "pip"
 $vm_memory              = 1024

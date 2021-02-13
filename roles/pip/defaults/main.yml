@@ -10,7 +10,7 @@ pip_executable: pip3
 # Pip package names
 pip_package_names:
   - "python3-pip"
-  - "python-setuptools"
+  - "python3-setuptools"
 
 # Package to install
 pip_packages: []

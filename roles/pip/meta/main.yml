@@ -3,7 +3,9 @@
 dependencies:
 
   - role: epel
-    when: ansible_os_family == "RedHat"
+    when:
+      - ansible_os_family == "RedHat"
+      - ansible_distribution_major_version < '8'
 
 galaxy_info:
   author: wikitops
